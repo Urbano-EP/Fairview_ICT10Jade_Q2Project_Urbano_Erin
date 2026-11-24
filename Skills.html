@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Skills Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <style>
+    body {
+        text-align: center;
+        background-color: rgb(235, 240, 255);
+    }
+
+    h1 {
+        color: rgb(4, 50, 136);
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+    #output1 {
+        border: 3px solid rgb(17, 20, 193);
+        box-shadow: 0px 5px 5px rgb(200, 200, 200);
+        height: 200px;
+        border-radius: 10px;
+        font-size: 20px;
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    #output1 {
+        text-align: center;
+    }
+</style>
+
+</head>
+<body>
+
+    <nav class="bg-dark text-white p-3">
+
+    <h2>Campus Showcase</h2>
+
+    <ul class="nav">
+
+        <li class="nav-item">
+            <a class="nav-link text-white" href="Sw.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link text-white" href="Skills.html">Element Checker</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link text-white" href="drill.html">School Clubs</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Meet the Creator</a>
+        </li>
+
+    </ul>
+
+    <br><br>
+
+</nav>
+    <h1>Periodic Table Information Finder</h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <form>
+                    <label for="element">Enter a non-metal</label>
+                    <br>
+                    <input type="text" id="element" class="form-control">
+                    <br>
+
+                    <button type="button" class="btn btn-danger" py-click="show_element">Show</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="output1"></div>
+    <script type="py" src="skills.py"></script>
+</body>
