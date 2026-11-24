@@ -8,40 +8,67 @@
     <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
     <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
 
-    <style>
+   <style>
     body {
         text-align: center;
-        background-color: rgb(235, 240, 255);
+        background-color: #F4F6F8;
+        color: #334E68;
+    }
+
+    nav {
+        background-color: #243B53;
+    }
+
+    nav h2 {
+        color: white;
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    .nav {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        margin-top: 0;
     }
 
     h1 {
-        color: rgb(4, 50, 136);
+        color: #243B53;
         margin-top: 20px;
         font-weight: bold;
     }
 
+    label {
+        font-weight: bold;
+        color: #334E68;
+    }
+
+    input {
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 5px;
+        background-color: #627D98;
+        color: white;
+        border: none;
+    }
+
     #output1 {
-        border: 3px solid rgb(17, 20, 193);
-        box-shadow: 0px 5px 5px rgb(200, 200, 200);
+        border: 3px solid #627D98;
+        box-shadow: 0px 5px 5px #D9E2EC;
         height: 200px;
         border-radius: 10px;
         font-size: 20px;
         background-color: white;
         padding: 20px;
         margin-top: 20px;
-        text-align: left;
-    }
-
-    button {
-        width: 100%;
-        margin-top: 5px;
-    }
-
-    label {
-        font-weight: bold;
-    }
-
-    #output1 {
         text-align: center;
     }
 </style>
@@ -49,7 +76,7 @@
 </head>
 <body>
 
-    <nav class="bg-dark text-white p-3">
+    <nav class="bg-dark text-white p-2">
 
     <h2>Campus Showcase</h2>
 
@@ -73,6 +100,8 @@
 
     </ul>
 
+    </nav>
+
     <br><br>
 
 </nav>
@@ -86,7 +115,7 @@
                     <input type="text" id="element" class="form-control">
                     <br>
 
-                    <button type="button" class="btn btn-danger" py-click="show_element">Show</button>
+                    <button type="button" class="btn btn-warning" py-click="show_element">Show</button>
                 </form>
             </div>
         </div>
